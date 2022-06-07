@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>User Details</h1>
+    <section>
+        <h3><strong>Name</strong>:<%= data.name %> </h3>
+        <h3><strong>Email</strong>:<%= data.email %> </h3>
+        <h3><strong>Contact</strong>:<%= data.contact %> </h3>
+        <h3><strong>Entry Time</strong>:<%= data.entryTime %> </h3>
+        <form action="/Home/<%= data._id %> " method="GET">
+            <button type="submit">Exit</button>
+        </form>
+    </section>
+    
+</body>
+</html>
